@@ -5,7 +5,7 @@
 
 
 ### Vad ska vara med i planering:
-- ==Pappersskiss==
+- ~~Pappersskiss~~
 - Figma Skiss
 - Font(s) & Färgtema
 - Logotyp(?)
