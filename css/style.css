@@ -16,7 +16,7 @@
     min-height: 100vh;
 }
 nav {
-    height: 10vh;
+    height: 5vh;
     width: 100vw;
     background-color: var(--white);
     display: flex;
@@ -24,7 +24,9 @@ nav {
     text-transform: uppercase;
     align-items: center;
     position: fixed;
-    z-index: 12;
+    overflow-y: hidden;
+    z-index: 13;
+    transition: 1s ease;
 
 }
 .currentNav {
@@ -32,12 +34,17 @@ nav {
 }
 main {
     background-color: var(--white);
-    z-index: 10;
     position: relative;
     height: auto;
     width: 100vw;
     min-height: 200vh;
+
     
+    
+}
+.mainBlock {
+    height: 10vh;
+    position: relative;
 }
 .keycap {
     width: 48px;
@@ -45,20 +52,20 @@ main {
     position: absolute;
     margin-top: 10px;
     top: 100px;
-    z-index: 9;
+    z-index: 10;
 
     
 }
 .keycap:nth-child(1) {
     left: -10px;
     width: 64px;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-in-out;
     height: 64px;
 }
 .keycap:nth-child(2) {
     left: 17px;
     margin: 0;
-    transition: 0.7s ease-out;
+    transition: 0.7s ease-in-out;
 
 }
 .keycap:nth-child(3) {
@@ -66,7 +73,7 @@ main {
     width: 64px;
     height: 64px;
     margin-top: 5px;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-in-out;
 
 }
 .logoBox {
@@ -76,6 +83,7 @@ main {
     position: relative;
     flex-direction: row;
     justify-content: space-evenly;
+    z-index: 10;
 }
 .navItem {
     height: 100%;
@@ -86,6 +94,12 @@ main {
 .openCap {
     top: 0px;
 }
+.keycapPop {
+    top: -60px;
+}
+.keycapPop2 {
+    top: 50px;
+}
 .main1 {
     height: 50vh;
     background-color: var(--gray);
@@ -94,6 +108,8 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     font-size: 1.5rem;
+    position: relative;
+
     position: relative;
 }
 .main1 h1 {
@@ -115,4 +131,13 @@ main {
     height: 70%;
     width: 50%;
     background-color: var(--darkGray);
+}
+
+
+.keycapScrollStart {
+    top: 10px;
+    
+}
+.scrollStart {
+    height: 10vh;
 }

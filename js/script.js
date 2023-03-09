@@ -1,14 +1,17 @@
 console.log("linked")
 
 
-var keycap = document.getElementsByClassName("keycap");
+let keycap = document.getElementsByClassName("keycap");
 function loadLogo() {
     for (let i = 0; i < keycap.length; i++) {
         console.log("keycap pop");
-        keycap[i].style.top = "0px";
+        keycap[i].classList.add("keycapPop");
         
     setTimeout(() => {
-        keycap[i].style.top = "15px"
+        keycap[i].classList.remove("keycapPop");
+        keycap[i].classList.add("keycapPop2");
+        
+
         }, 800);
         
     }
@@ -18,18 +21,24 @@ setTimeout(() => {
    loadLogo() 
 }, 300)
 
-document.body.onscroll = function navTracker() {
-    var navItem = document.getElementsByClassName("navItem");
-    console.log("scrolling")
-    for (let i = 0; i < navItem.length; i++) {
-        switch (navItem) {
-            case (window.innerHeight)* 0:
-                navItem[1].classListToggle("currentNav");
-            break;
+window.onscroll = function() {navScroll()};
+function navScroll() {
+    let nav = document.querySelector("nav");
+    let keycap = document.getElementsByClassName("keycap");
 
-            default:
-                navItem[i].classList.Toggle("currentNav") 
-        } 
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        console.log("scroll > 0")
+        nav.classList.add("scrollStart");
+
+        for (let i = 0; i < keycap.length; i++) {
+            keycap[i].classList.add("keycapScrollStart");
+        }
+    } else {
+        for (let i = 0; i < keycap.length; i++) {
+            keycap[i].classList.remove("keycapScrollStart");
+        }
+
+        nav.classList.remove("scrollStart");
+        console.log("scroll = 0")
     }
 }
-
