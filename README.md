@@ -21,7 +21,7 @@ Jag började planera upp mitt projekt med att leta inspiration och andra portfol
 white: #F8F8F8
 Gray: #EBEBEB  
 Dark Gray: 6D6D6D
-Black: #013100
+Black: #012700
 Green: 4F8C10  
 
 #### Figma Skiss:

@@ -2,9 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "open-sans", sans-serif;
+    color: var(--black);
 }
 :root {
-   --black: #013100;
+   --black: #012700;
    --darkGray: #6D6D6D;
    --gray: #ebebeb;
    --white: #F8F8F8;
@@ -15,17 +17,26 @@
 }
 nav {
     height: 10vh;
+    width: 100vw;
     background-color: var(--white);
     display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
     align-items: center;
+    position: fixed;
+    z-index: 12;
 
 }
+.currentNav {
+    border-bottom: solid 2px var(--green);
+}
 main {
-    background-color: var(--gray);
+    background-color: var(--white);
     z-index: 10;
     position: relative;
     height: auto;
-    min-height: 100vh;
+    width: 100vw;
+    min-height: 200vh;
     
 }
 .keycap {
@@ -74,4 +85,34 @@ main {
 }
 .openCap {
     top: 0px;
+}
+.main1 {
+    height: 50vh;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    position: relative;
+}
+.main1 h1 {
+    position: absolute;
+}
+.main1 h1:nth-child(1) { /* "Olle" */
+    top: 30%;
+    left: 10%;
+}
+.main1 h1:nth-child(2) { /* "Henriksson" */
+    bottom: 4rem;
+    right: 4rem;
+}
+.main1 h1:nth-child(3) { /* "Wirén" */
+   bottom: 0;
+   right: 1rem;
+}
+.main1ImgBox {
+    height: 70%;
+    width: 50%;
+    background-color: var(--darkGray);
 }

@@ -14,5 +14,22 @@ function loadLogo() {
     }
 }
 
+setTimeout(() => {
+   loadLogo() 
+}, 300)
 
-loadLogo()
+document.body.onscroll = function navTracker() {
+    var navItem = document.getElementsByClassName("navItem");
+    console.log("scrolling")
+    for (let i = 0; i < navItem.length; i++) {
+        switch (navItem) {
+            case (window.innerHeight)* 0:
+                navItem[1].classListToggle("currentNav");
+            break;
+
+            default:
+                navItem[i].classList.Toggle("currentNav") 
+        } 
+    }
+}
+
