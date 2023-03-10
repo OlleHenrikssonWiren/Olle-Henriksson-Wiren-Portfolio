@@ -3,12 +3,15 @@ console.log("linked")
 
 let keycap = document.getElementsByClassName("keycap");
 function loadLogo() {
-    for (let i = 0; i < keycap.length; i++) {
+
+    
+
+    for (let i = 0; i < keycap.length; i++) { // To make keycap logo go up
         console.log("keycap pop");
         keycap[i].classList.add("keycapPop");
         
     setTimeout(() => {
-        keycap[i].classList.remove("keycapPop");
+        keycap[i].classList.remove("keycapPop"); // To make keycap logo go down
         keycap[i].classList.add("keycapPop2");
         
 
@@ -26,7 +29,7 @@ function navScroll() {
     let nav = document.querySelector("nav");
     let keycap = document.getElementsByClassName("keycap");
 
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         console.log("scroll > 0")
         nav.classList.add("scrollStart");
 

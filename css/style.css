@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "open-sans", sans-serif;
+    font-family: "Open Sans", cursive;
     color: var(--black);
 }
 :root {
@@ -27,6 +27,7 @@ nav {
     overflow-y: hidden;
     z-index: 13;
     transition: 1s ease;
+    background-color: var(--gray,0);
 
 }
 .currentNav {
@@ -41,10 +42,6 @@ main {
 
     
     
-}
-.mainBlock {
-    height: 10vh;
-    position: relative;
 }
 .keycap {
     width: 48px;
@@ -106,33 +103,82 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 1.5rem;
     position: relative;
-
+    letter-spacing: 5px;
     position: relative;
 }
 .main1 h1 {
-    position: absolute;
+    font-family: basic-sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-style: normal;
+    z-index: 5;
+    
 }
-.main1 h1:nth-child(1) { /* "Olle" */
+.main1 h4 {
+    text-align: center;
+    font-family: basic-sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.posBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main1 hr {
+    width: 200px;
+}
+.posName1 {
+  
+}
+.posName2 {
+
+}
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/*
+.main1 h1:nth-child(1) { "Olle" 
     top: 30%;
     left: 10%;
 }
-.main1 h1:nth-child(2) { /* "Henriksson" */
+.main1 h1:nth-child(2) {  "Henriksson"
     bottom: 4rem;
-    right: 4rem;
+    z-index: 6;
+    right: 2rem;
 }
-.main1 h1:nth-child(3) { /* "Wirén" */
+.main1 h1:nth-child(3) { "Wirén" 
    bottom: 0;
    right: 1rem;
+   z-index: 6;
 }
+*/
 .main1ImgBox {
-    height: 70%;
-    width: 50%;
+    height: 60%;
+    width: 40%;
     background-color: var(--darkGray);
+    letter-spacing: 0;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    z-index: 2;
 }
 
+.main2 {
+    height: 40vh;
+    width: 100vw;
+    box-shadow: 0px -10px 4px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 0px -10px 4px 0px rgba(0,0,0,0.33);
+    z-index: 15;
+    position: relative;
+}
 
 .keycapScrollStart {
     top: 10px;
@@ -140,4 +186,5 @@ main {
 }
 .scrollStart {
     height: 10vh;
+    background-color: var(--white, 1);
 }
