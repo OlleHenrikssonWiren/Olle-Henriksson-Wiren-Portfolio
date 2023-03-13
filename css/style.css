@@ -131,11 +131,14 @@ main {
 }
 .main1 hr {
     width: 200px;
+    height: 1px;
 }
 .posName1 {
-  
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 .posName2 {
+    margin-top: 0.3rem;
 
 }
 .headerText {
