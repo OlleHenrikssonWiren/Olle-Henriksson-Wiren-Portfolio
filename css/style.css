@@ -75,11 +75,11 @@ main {
 }
 .logoBox {
     height: 100%;
-    width: 25%;
+    width: 66%;
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 10;
 }
 .navItem {
@@ -187,4 +187,57 @@ main {
 .scrollStart {
     height: 10vh;
     background-color: var(--white, 1);
+}
+.expandArrow { /* Själva pilen bredvid logo på mobil */
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
+    transform: rotate(180deg);
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    transition: ease 1s;
+    opacity: 0;
+    user-select: none;
+    z-index: 18;
+    cursor: initial;
+}
+.showArrow {
+    cursor: pointer;
+    user-select: initial;
+    opacity: 1;
+    transition: opacity ease 1s;
+    transition: transform ease 0.3s; 
+}
+.navExpanded { /* arrow knappen förändras när man öppnar upp nav genom click */
+    transform: rotate(0deg);
+}
+
+.navPopup { /*Rutan som öppnas på click*/
+    width: 30vw;
+    height: 15vh;
+    position: fixed;
+    top: -20vh;
+    z-index: 12;
+    border-bottom-right-radius: 0.33rem;
+    background-color: var(--white);
+    box-shadow: 0px 15px 4px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 0px 10px 4px 0px rgba(0,0,0,0.33);
+    user-select: none;
+    transition: all ease 0.5s;
+}
+
+.popupOn { /* När rutan är på genom att klicka på arrow */
+    
+    
+    user-select: initial;
+    top: 10vh;
+
+    
+}
+
+@media screen and (min-width: 769px) { /* For screens bigger than usual phones, small screens */
+    .expandArrow {
+        display: none;
+    }
 }
