@@ -177,12 +177,15 @@ main {
 }
 
 .main2 {
-    height: 40vh;
+    min-height: 40vh;
     width: 100vw;
     top: 50vh;
     z-index: 2;
     position: relative;
     background-color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .keycapScrollStart {
@@ -218,6 +221,7 @@ main {
     transform: rotate(0deg);
 }
 
+
 .navPopup { /*Rutan som öppnas på click*/
     width: 30vw;
     height: 15vh;
@@ -233,21 +237,44 @@ main {
 }
 
 .popupOn { /* När rutan är på genom att klicka på arrow */
-    
-    
     user-select: initial;
     top: 10vh;
-
-    
 }
 
-.blobBox {
+.sittingFig {
+    width: 30px;
+    position: absolute;
+    top: -50px;
+    right: 3rem ;
+    fill: var(--white);
+    color: var(--white);
+}
+.portHeader {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: "basic-sans", sans-serif;
+    letter-spacing: 5px;
+    border-bottom: 1px solid var(--black);
+    padding: 0.1rem;
+}
+
+.worksBox {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    flex-direction: row;
     justify-content: center;
 }
-.blob {
-    transform: rotate(90deg);
+.worksItem {
+    background-color: var(--gray);
+    margin-bottom: 5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.15rem;
+    width: 40vw;
+    height: 25vh;
+    border: solid var(--black) 1px;
 }
 
 @media screen and (min-width: 769px) { /* For screens bigger than usual phones, small screens */
