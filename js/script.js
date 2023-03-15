@@ -51,7 +51,6 @@ function navScroll() {
 
         }
         
-
         console.log("scroll = 0")
     }
 }
@@ -65,6 +64,23 @@ function toggleNav() {
 
     arrow.classList.toggle("navExpanded")
     navPopup.classList.toggle("popupOn")
+}
+
+
+
+
+
+
+
+
+
+let blobBtn = document.querySelector(".blobButton");
+let blob = document.querySelectorAll(".blobChar");
+blobBtn.onclick = function blobToggle() {
+    console.log("blob toggle")
+    for (let i = 0; i < blob.length; i++) {
+        blob[i].classList.toggle("blobOn");
+     }
 }
 
     
