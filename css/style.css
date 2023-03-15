@@ -207,15 +207,18 @@ main {
     transition: ease 1s;
     opacity: 0;
     user-select: none;
+    pointer-events: none;
     z-index: 18;
     cursor: initial;
 }
-.showArrow {
+.showArrow { /* Arrow when scrolled down */
     cursor: pointer;
     user-select: initial;
     opacity: 1;
     transition: opacity ease 1s;
     transition: transform ease 0.3s; 
+    pointer-events: all;
+
 }
 .navExpanded { /* arrow knappen förändras när man öppnar upp nav genom click */
     transform: rotate(0deg);
