@@ -66,6 +66,28 @@ function toggleNav() {
     navPopup.classList.toggle("popupOn")
 }
 
+// ITEM HOVER FUNCTIONS --VVVV--
+
+let worksItemExpanded = document.querySelector(".worksItemExpandedBox");
+let worksItem = document.querySelectorAll(".worksItem");
+
+for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
+        worksItem[itemCount].onclick = function createWorksItem() {
+            worksItemExpanded.style.display = "flex"
+    }
+}
+
+
+for (let i = 0; i < worksItem.length; i++) {
+    let itemTitle = document.querySelector(worksItem[0] > ".itemExTitle");
+    switch (i) {
+        case 0:
+            itemTitle.innerHTML = "Q'ente"
+        break;
+
+
+    }
+}
 
 
 

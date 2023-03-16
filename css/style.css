@@ -133,7 +133,6 @@ main {
 }
 .main1 hr {
     width: 200px;
-    height: 1px;
 }
 .posName1 {
     margin-top: 0.3rem;
@@ -257,10 +256,11 @@ main {
     font-weight: 200;
     font-family: "basic-sans", sans-serif;
     letter-spacing: 5px;
-    border-bottom: 1px solid var(--black);
     padding: 0.1rem;
 }
-
+.main2 hr {
+    width: 75%;
+}
 .worksBox {
     display: flex;
     flex-wrap: wrap;
@@ -287,6 +287,9 @@ main {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
 }
+.worksItem:nth-child(1) .worksImg{ /* Qente IMG */
+    background-image: url(../img/projects/qente/logotypeText.svg);
+}
 .worksDesc {
     height: 33.3%;
     width: 100%;
@@ -308,7 +311,44 @@ main {
     margin-bottom: 8px;
 }
 
-
+.worksItemExpandedBox { /* The box that appears onclick on works item */
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     width: 80vw;
+     height: 60vh;
+     border: solid var(--darkGray) 1px;
+     background-color: var(--white);
+     z-index: 300;
+     display: flex;
+     transform: translate(-50%, -50%);
+     border-radius: 5px;
+     flex-direction: column;
+     align-items: center;
+}
+.itemExImg {
+    height: 65%;
+    width: 100%;
+}
+.itemExDesc {
+    border-top: var(--darkGray) solid 1px;
+    height: 25%;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.itemExTitle {
+    height: 10%;
+    width: 100%;
+    border-bottom: var(--darkGray) 1px solid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
 
 
 .blobButton {
