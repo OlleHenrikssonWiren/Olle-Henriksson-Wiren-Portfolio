@@ -188,11 +188,11 @@ main {
     flex-direction: column;
 }
 
-.keycapScrollStart {
+.keycapScrollStart { 
     top: 10px;
     
 }
-.scrollStart {
+.scrollStart { /* Nav innan scroll */
     height: 10vh;
     background-color: var(--white, 1);
 }
