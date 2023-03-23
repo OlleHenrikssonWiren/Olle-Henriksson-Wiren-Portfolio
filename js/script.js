@@ -85,10 +85,13 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
 
                     console.log("first item")
                     title.innerHTML = "Q'ENTE"
-                    img.innerHTML = "<img class=imgObjOn itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
+                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
                     desc.innerHTML = "Work done for Q'ente, a company who provides health and art. This project was done by me and other classmates for our final exam."
-                    
-                    
+                    for (let v = 0; v < imgObj.length; v++) {
+                        imgObj[0].classList.add("imgObjOn")
+                        console.log("dooke")
+                    }
+                                        
                 
             }
     }
