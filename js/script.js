@@ -77,26 +77,8 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
             worksItemExpanded.style.display = "flex"
     for (let i = 0; i < worksItem.length; i++) {
         let itemTitle = worksItem[i].getElementsByClassName(".itemExTitle")
-        switch (i) {
-            case 0:
-                console.log("case 1")
-                itemTitle.innerHTML = "Q'ente TEst"
-            break;
-            case 1:
-                console.log("case 2")
-            break;
-            case 2:
-                console.log("case 3")
-            break;
-            case 3:
-                console.log("case 4")
-            break;
-            case 4:
-                console.log("case 5")
-            break;
-            case 5:
-                console.log("case 6")
-            break;
+            if (i = 0) {
+                
             }
         }
     }
