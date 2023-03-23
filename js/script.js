@@ -75,16 +75,31 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
         
     worksItem[itemCount].onclick = function createWorksItem() {
             worksItemExpanded.style.display = "flex"
-    for (let i = 0; i < worksItem.length; i++) {
-        let itemTitle = worksItem[i].getElementsByClassName(".itemExTitle")
-            if (i = 0) {
+            switch (itemCount) {
+                case 0:
+                    let title = document.querySelector(".itemExTitle")
+                    let img = document.querySelector(".itemExImg");
+                    let desc = document.querySelector(".itemExDesc")
+                    let imgObj = document.querySelectorAll(".itemImgObj")
+
+
+                    console.log("first item")
+                    title.innerHTML = "Q'ENTE"
+                    img.innerHTML = "<img class=imgObjOn itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
+                    desc.innerHTML = "Work done for Q'ente, a company who provides health and art. This project was done by me and other classmates for our final exam."
+                    
+                    
                 
             }
-        }
     }
 }
+document.querySelector(".rightArrow").addEventListener("click", swapItem);
+function swapItem() {
+    let img = document.querySelectorAll(".itemImgObj")
+    for (let x = 0; x < img.length; x++) {
 
-
+    }
+}
 
 
 

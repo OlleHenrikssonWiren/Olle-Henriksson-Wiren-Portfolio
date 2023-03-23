@@ -329,6 +329,36 @@ main {
 .itemExImg {
     height: 65%;
     width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.itemImgObj {
+    width: 80vw;
+    position: fixed;
+    left: -100vw;
+}
+.imgObjOn {
+    left: 0;
+}
+#firstImgObj {
+    left: 0;
+}
+.arrowBox {
+    width: 80vw;
+    display: flex;    
+    position: fixed;
+    top: 35%;
+    justify-content: flex-end;
+
+}
+.rightArrow {
+    width: 60px;
+    opacity: 0.5;
+}
+.rightArrow:hover {
+    opacity: 1;
 }
 .itemExDesc {
     border-top: var(--darkGray) solid 1px;
@@ -339,6 +369,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: small;
 }
 .itemExTitle {
     height: 10%;
@@ -348,6 +379,8 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-weight: bolder;
+    letter-spacing: 4px;
 }
 
 
