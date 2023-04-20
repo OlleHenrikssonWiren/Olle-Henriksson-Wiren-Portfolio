@@ -1,5 +1,10 @@
 console.log("linked")
 
+//Global vars & lets
+let increase = 0;
+
+
+
 
 let keycap = document.getElementsByClassName("keycap");
 function loadLogo() {
@@ -74,37 +79,72 @@ let worksItem = document.querySelectorAll(".worksItem");
 for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
         
     worksItem[itemCount].onclick = function createWorksItem() {
-            worksItemExpanded.style.display = "flex"
-            switch (itemCount) {
-                case 0:
+
+    
+        
+                    worksItemExpanded.style.display = "flex"
+                    increase = 0;
+
                     let title = document.querySelector(".itemExTitle")
                     let img = document.querySelector(".itemExImg");
                     let desc = document.querySelector(".itemExDesc")
                     let imgObj = document.querySelectorAll(".itemImgObj")
-
-
+            switch (itemCount) {
+                case 0:
                     console.log("first item")
                     title.innerHTML = "Q'ENTE"
                     img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
                     desc.innerHTML = "Work done for Q'ente, a company who provides health and art. This project was done by me and other classmates for our final exam."
                     for (let v = 0; v < imgObj.length; v++) {
-                        imgObj[0].classList.add("imgObjOn")
-                        console.log("dooke")
+                    imgObj[0].classList.add("imgObjOn")
+                    console.log("dooke")
+                    swapItem()
                     }
                                         
                 
             }
+
+            
     }
 }
+
+
+
+//Slide show stuff 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+let i;
+let slides = document.querySelectorAll(".itemImgObj");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slides[slideIndex-1].style.display = "block";
+}     
+document.querySelector(".rightArrow").addEventListener("click", plusSlides(1));
+
+
+
 document.querySelector(".rightArrow").addEventListener("click", swapItem);
-function swapItem() {
-    let img = document.querySelectorAll(".itemImgObj")
-    for (let x = 0; x < img.length; x++) {
+function swapItem() { //När man klickar på höger pilen för att bläddra bild
+    
 
-    }
+
+} // To close the popup
+document.querySelector(".itemClose").onclick = function closePopup() {
+    worksItemExpanded.style.display = "none"
+    increase = 0;
 }
-
-
 
 
 

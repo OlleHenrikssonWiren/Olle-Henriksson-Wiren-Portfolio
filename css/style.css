@@ -275,20 +275,24 @@ main {
     border-radius: 0.3rem;
     width: 45vw;
     height: 35vh;
-    border: solid var(--black) 1px;
+    border: solid var(--darkGray) 1px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .worksImg {
     height: 66.6%;
     width: 100%;
-    border-bottom: solid black 1px;
+    border-bottom: solid var(--darkGray) 1px;
     background-color: var(--gray);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
 }
 .worksItem:nth-child(1) .worksImg{ /* Qente IMG */
     background-image: url(../img/projects/qente/logotypeText.svg);
+}
+.imgActive {
+    left: 0vw;
 }
 .worksDesc {
     height: 33.3%;
@@ -337,25 +341,31 @@ main {
 .itemImgObj {
     width: 80vw;
     position: fixed;
-    left: -100vw;
-}
+    display: none;
+}/*
 .imgObjOn {
-    left: 0;
 }
 #firstImgObj {
-    left: 0;
 }
+.dotBox {
+    width: 50%;
+    height: 5%;
+}*/
 .arrowBox {
-    width: 80vw;
     display: flex;    
     position: fixed;
     top: 35%;
+    right: 0;
+    z-index: 40;
     justify-content: flex-end;
 
 }
 .rightArrow {
     width: 60px;
     opacity: 0.5;
+    z-index: 35000;
+    cursor: pointer;
+    position: relative;
 }
 .rightArrow:hover {
     opacity: 1;
@@ -381,8 +391,16 @@ main {
     align-items: center;
     font-weight: bolder;
     letter-spacing: 4px;
+    position: relative;
 }
 
+.itemClose {
+    right: 0;
+    z-index: 30000;
+    position: absolute;
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 .blobButton {
     position: absolute;

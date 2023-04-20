@@ -32,13 +32,25 @@
 <body>
 
 <div class="wrapper">
-    <div class="navPopup"></div>
-    <div class="worksItemExpandedBox" style="display: none">
-        <div class="itemExTitle"><p>TITLE</p></div> 
+    <div class="navPopup"></div>            
+    <div class="worksItemExpandedBox" style="display: none">  
+        <div class="dotBox">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>  
+        <div class="itemClose"><img class="itemCloseImg" src="./img/ico/closeGoogle.svg" alt="close icon"></div>
+
+        <div class="itemExTitle">
+            <p>TITLE</p>
+        </div> 
         <div class="arrowBox">
                 <img src="./img/ico/rightArrowGoogle.svg" alt="right arrow" class="rightArrow">
         </div>
         <div class="itemExImg"> 
+            <img src="../img/projects/qente/logotypeText.svg" alt="qente_logo" class="itemImgObj">
+            <img src="../img/projects/qente/logotypeText.svg" alt="qente_logo" class="itemImgObj">
+            <img src="../img/projects/qente/logotypeText.svg" alt="qente_logo" class="itemImgObj">
         </div>
         <div class="itemExDesc"><p>PLACEHOLDER TEXT, there will be alot of text here, yippie</p></div>
     </div>
@@ -80,7 +92,7 @@
             <img src="./img/figs/sitting.svg" alt="sitting figure" class="sittingFig blobChar">
 
             <div><h2 class="portHeader">Works</h2></div>
-            <hr>
+            
             <div class="worksBox">
                 <div class="worksItem">
                     <div class="worksImg"></div>
