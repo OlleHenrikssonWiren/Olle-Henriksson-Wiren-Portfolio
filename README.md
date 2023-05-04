@@ -19,7 +19,7 @@ Jag började planera upp mitt projekt med att leta inspiration och andra portfol
 
 #### Färgtema:
 white: #F8F8F8
-Gray: #EBEBEB  
+Gray: #CFCFCF  
 Dark Gray: #6D6D6D
 Black: #012700
 Green: #4F8C10  

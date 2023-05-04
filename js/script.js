@@ -75,12 +75,12 @@ function toggleNav() {
 
 let worksItemExpanded = document.querySelector(".worksItemExpandedBox");
 let worksItem = document.querySelectorAll(".worksItem");
+let desc = document.querySelectorAll(".worksDesc")
 
 for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
         
     worksItem[itemCount].onclick = function createWorksItem() {
 
-    
         
                     worksItemExpanded.style.display = "flex"
                     increase = 0;
@@ -89,8 +89,10 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
                     let img = document.querySelector(".itemExImg");
                     let desc = document.querySelector(".itemExDesc")
                     let imgObj = document.querySelectorAll(".itemImgObj")
-            switch (itemCount) {
-                case 0:
+
+
+                    switch (itemCount) {
+                    case 0:
                     console.log("first item")
                     title.innerHTML = "Q'ENTE"
                     img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
@@ -98,15 +100,20 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
                     for (let v = 0; v < imgObj.length; v++) {
                     imgObj[0].classList.add("imgObjOn")
                     console.log("dooke")
-                    swapItem()
+                    swapItem()     
                     }
-                                        
-                
-            }
-
-            
-    }
+                    break;
+                    case 1:
+                        console.log("first item")
+                    title.innerHTML = "SMALL PROJECTS"
+                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>  <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
+                    desc.innerHTML = "These are smaller projects, created within 2 or 3 weeks"
+                    break;
+                }
+        }
+        
 }
+
 
 
 
@@ -146,8 +153,7 @@ document.querySelector(".itemClose").onclick = function closePopup() {
     increase = 0;
 }
 
-
-
+ 
 
 
 
@@ -159,5 +165,8 @@ blobBtn.onclick = function blobToggle() {
         blob[i].classList.toggle("blobOn");
      }
 }
+
+
+
 
     
