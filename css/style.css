@@ -288,6 +288,7 @@ main {
     width: 100%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     background-color: var(--white);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
@@ -377,6 +378,9 @@ main {
     justify-content: flex-end;
     opacity: 0.8;
 
+}
+.fishImg {
+    width: 35vw;
 }
 .rightArrow {
     width: 60px;
