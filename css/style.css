@@ -348,9 +348,12 @@ main {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: relative;
+    z-index: 300;
 }
 .itemImgObj {
     width: 80vw;
+    height: 40vh;
     position: fixed;
     display: none;
 }/*
@@ -362,25 +365,33 @@ main {
     width: 50%;
     height: 5%;
 }*/
+.dotBox {
+    z-index: 320;
+}
 .arrowBox {
-    display: flex;    
+    display: block;    
     position: fixed;
     top: 35%;
     right: 0;
-    z-index: 40;
+    z-index: 320;
     justify-content: flex-end;
+    opacity: 0.8;
 
 }
 .rightArrow {
     width: 60px;
-    opacity: 0.5;
     z-index: 35000;
     cursor: pointer;
     position: relative;
 }
-.rightArrow:hover {
+/*.rightArrow:hover {
     opacity: 1;
+}*/
+.arrowActive {
+    opacity: 0.8;
+    display: block;
 }
+
 .itemExDesc {
     border-top: var(--gray) solid 2px;
     height: 25%;
@@ -412,6 +423,36 @@ main {
     opacity: 0.7;
     cursor: pointer;
 }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/*.dotActive {
+    opacity: 1;
+    display: block;
+}*/
+.backgroundBlur {  
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    z-index: -10;
+    transition: ease 0.3s;
+
+}
+.backgroundActive {
+    opacity: 0.6;
+    z-index: 280;
+}
+
 
 .blobButton {
     position: absolute;
