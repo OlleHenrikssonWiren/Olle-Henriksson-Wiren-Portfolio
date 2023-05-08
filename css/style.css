@@ -22,6 +22,7 @@ nav {
     background-color: var(--white);
     display: flex;
     font-weight: bold;
+    justify-content: space-evenly;
     text-transform: uppercase;
     align-items: center;
     position: fixed;
@@ -40,7 +41,8 @@ main {
     height: auto;
     width: 100vw;
     min-height: 200vh;
-
+    display: flex;
+    flex-direction: column;
     
     
 }
@@ -85,10 +87,14 @@ main {
 }
 .navItem {
     height: 100%;
-    width: 25%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
+nav a {
+    text-decoration: none;
+}
+
 .openCap {
     top: 0px;
 }
@@ -455,6 +461,68 @@ main {
 .backgroundActive {
     opacity: 0.6;
     z-index: 280;
+}
+
+
+.main3 {
+    min-height: 30vh;
+    width: 100%;
+    background-color: var(--lightGray);
+    position: relative;
+    bottom: -50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutMeBox {
+    width: 100%;
+}
+
+.aboutInfo div {
+    font-size: .8rem;
+    text-align: center;
+    width: 33%;
+}
+.aboutInfo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.progIcon {
+    width: 28px;
+}
+.iconImgBox {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iconBox {   
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.contactBox {
+    width: 100vw;
+    background-color: var(--white);
+    margin-top: 16px;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+}
+.contactMe a {    
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.contactMe {
+    padding: 32px;
+    padding-bottom: 8px;
 }
 
 

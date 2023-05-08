@@ -31,7 +31,7 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="wrapper" id="start">
     <div class="backgroundBlur"></div>
     <div class="navPopup"></div>            
     <div class="worksItemExpandedBox" style="display: none">  
@@ -52,16 +52,15 @@
         
     </div>
     <nav>
-        <div class="logoBox navItem">
+        <div class="logoBox navItem"><a href="#start">
             <img class="keycap" id="w" src="./img/O.png" alt="O keycap">    
             <img class="keycap" id="h" src="./img/H.png" alt="H keycap">
             <img class="keycap" id="o" src="./img/W.png" alt="W keycap">
-            <svg class="expandArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.002 330.002" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_105_" d="M324.001,209.25L173.997,96.75c-5.334-4-12.667-4-18,0L6.001,209.25c-6.627,4.971-7.971,14.373-3,21 c2.947,3.93,7.451,6.001,12.012,6.001c3.131,0,6.29-0.978,8.988-3.001L164.998,127.5l141.003,105.75c6.629,4.972,16.03,3.627,21-3 C331.972,223.623,330.628,214.221,324.001,209.25z"></path> </g></svg>
-        </div>
+            <!--<svg class="expandArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.002 330.002" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_105_" d="M324.001,209.25L173.997,96.75c-5.334-4-12.667-4-18,0L6.001,209.25c-6.627,4.971-7.971,14.373-3,21 c2.947,3.93,7.451,6.001,12.012,6.001c3.131,0,6.29-0.978,8.988-3.001L164.998,127.5l141.003,105.75c6.629,4.972,16.03,3.627,21-3 C331.972,223.623,330.628,214.221,324.001,209.25z"></path> </g></svg>-->
+        </a></div>
 
-        <div class="navItem">place</div>
-        <div class="navItem">place</div>
-        <div class="navItem">place</div>
+        <div class="navItem"><a href="#works">works</a></div>
+        <div class="navItem"><a href="#aboutMeBox">About me</a></div>
         <div class="navItem blobButton"></div>
     </nav>
     <main>
@@ -88,7 +87,7 @@
         <div class="main2">
             <img src="./img/figs/sitting.svg" alt="sitting figure" class="sittingFig blobChar">
 
-            <div><h2 class="portHeader">Works</h2></div>
+            <div><h2 class="portHeader" id="works">Works</h2></div>
             
             <div class="worksBox">
                 <div class="worksItem">
@@ -130,6 +129,63 @@
 
             </div>
         </div>
+
+        <div class="main3">
+            <div id="aboutMeBox">
+                <h2 class="portHeader" style="text-align: center; font-weight: 400;">Hello, <br>My name is Olle</h2>
+                <div class="aboutInfo">
+                    <div>
+                        <h4>Language</h4>
+                        <p>Swedish, English</p>
+                    </div>
+                    <div>
+                        <h4>Education</h4>
+                        <p>NTI Johanneberg, Estetics & media</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contactBox">
+            <div>
+                <h4>Programs experienced in.</h4>
+                <div class="iconImgBox">
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_ai.svg" alt="illustrator">
+                        <p>Adobe <br>Illustrator</p>
+                    </div>
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_ps.svg" alt="photoshop">
+                        <p>Adobe<br> photoshop</p>
+                    </div>
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_ae.svg" alt="after effects">
+                        <p>Adobe <br> after effects</p>
+                    </div>
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_pr.svg" alt="premiere pro">
+                        <p>Adobe <br> premiere pro</p>
+                    </div>
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_html.png" alt="html">
+                        <p>HTML, <br>CSS, JS</p>
+                    </div>
+                    <div class="iconBox">
+                        <img class="progIcon" src="./img/ico/programs/icon_figma.svg" alt="figma">
+                        <p>Figma</p>
+                    </div>
+                </div>
+                <div class="contactMe">
+                <a href="mailto:olle.henrikssonwiren@gmail.com"><p>olle.henrikssonwiren@gmail.com</p></a>
+            </div>
+            </div>
+            
+
+            </div>
+        </div>
+
+        
+
+
 
     </main>
     
