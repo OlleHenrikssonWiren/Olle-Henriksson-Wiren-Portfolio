@@ -314,6 +314,7 @@ nav a {
     padding-top: 1rem;
     bottom: 0vh;
     border-top: var(--gray) 2px solid;
+    background-color: var(--white);
     /*background: linear-gradient(0deg, var(--lightGray) 40%, rgba(255,255,255,0) 100%); */
 
 }
@@ -358,11 +359,13 @@ nav a {
     position: relative;
     z-index: 300;
 }
+.itemExImg img {
+}
 .itemImgObj {
-    width: 80vw;
-    height: 40vh;
+    width: 50%;
     position: fixed;
     display: none;
+    overflow: hidden;
 }/*
 .imgObjOn {
 }
@@ -542,8 +545,35 @@ nav a {
     transform-origin: 100px;
     transform: scale(1);
 }
-@media screen and (min-width: 769px) { /* For screens bigger than usual phones, small screens */
+
+
+
+.keyLogoBox {
+    display: none;
+    transition: all 1s ease;
+}
+@media screen and (min-width: 740px) { /* For screens bigger than usual phones, small screens */
     .expandArrow {
         display: none;
+    }
+    .keyLogoKey {
+        width: 35vw;
+    }
+    .keyLogoBox {
+
+        position: absolute;
+        left: 0;
+        opacity: .09;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .worksItem {
+        width: 20vw;
+        height: 70vh;
+    }
+    .worksItemExpandedBox {
+        width: 70vw;
+        height: 80vh;
     }
 }

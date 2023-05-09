@@ -2,9 +2,16 @@ console.log("linked")
 
 //Global vars & lets
 let increase = 0;
+var querySize = window.matchMedia("(min-width: 740px)")
 
 
 
+
+
+
+function onLoad() {
+
+}
 
 let keycap = document.getElementsByClassName("keycap");
 function loadLogo() {
