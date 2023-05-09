@@ -36,7 +36,7 @@ setTimeout(() => {
    loadLogo() 
 }, 300)
 
-window.onscroll = function() {navScroll()};
+
 function navScroll() {
     let nav = document.querySelector("nav");
     let keycap = document.getElementsByClassName("keycap");
@@ -65,6 +65,24 @@ function navScroll() {
         
         console.log("scroll = 0")
     }
+}
+window.onscroll = function() {introMainScroll()};
+function introMainScroll() {
+    let mainIntro = document.querySelector(".main1");
+
+        //(window.innerHeight)* 0.65 betyder att när man scrollar 65vh istället för pixlar!!!
+    if (document.body.scrollTop > (window.innerHeight)* 0.8 || document.documentElement.scrollTop > (window.innerHeight) * 0.8) {
+        mainIntro.style.display = "none"
+        console.log("intro hidden")
+    }
+    else {
+        mainIntro.style.display = "flex"
+        console.log("intro show")
+    }
+}
+window.onscroll = function() { //Effect multiple onscroll functions
+    navScroll();
+    introMainScroll();
 }
 
 let navPopup = document.querySelector(".navPopup");
@@ -102,7 +120,7 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
                     case 0:
                     console.log("first item")
                     title.innerHTML = "Q'ENTE"
-                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/qenteCard.jpg alt=qente_logo class=itemImgObj> <img src=../img/projects/qente/qentemockupphone2.jpg alt=website_mockup class=itemImgObj>"
+                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/qenteCard.jpg alt=qente_logo class=itemImgObj id=qenteCardImg> <img src=../img/projects/qente/qentemockupphone2.jpg alt=website_mockup class=itemImgObj id=mockupImg>"
                     desc.innerHTML = "Work done for Q'ente, a company who provides health and art. This project was done by me and other classmates for our final exam."
                     for (let v = 0; v < imgObj.length; v++) {
                     imgObj[0].classList.add("imgObjOn")
