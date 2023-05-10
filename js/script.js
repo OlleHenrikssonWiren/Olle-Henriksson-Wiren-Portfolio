@@ -71,7 +71,7 @@ function introMainScroll() {
     let mainIntro = document.querySelector(".main1");
 
         //(window.innerHeight)* 0.65 betyder att när man scrollar 65vh istället för pixlar!!!
-    if (document.body.scrollTop > (window.innerHeight)* 0.8 || document.documentElement.scrollTop > (window.innerHeight) * 0.8) {
+    if (document.body.scrollTop > (window.innerHeight)* 1 || document.documentElement.scrollTop > (window.innerHeight) * 1) {
         mainIntro.style.display = "none"
         console.log("intro hidden")
     }
