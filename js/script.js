@@ -42,7 +42,7 @@ function navScroll() {
     let keycap = document.getElementsByClassName("keycap");
     //let arrow = document.querySelector(".expandArrow")
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > (window.innerHeight) * 0.5 || document.documentElement.scrollTop > (window.innerHeight) * 0.5) {
         console.log("scroll > 0")
         nav.classList.add("scrollStart");
         //arrow.classList.add("showArrow")

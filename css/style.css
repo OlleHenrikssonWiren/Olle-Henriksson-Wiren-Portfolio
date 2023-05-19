@@ -6,12 +6,12 @@
     color: var(--black);
 }
 :root {
-   --black: #012700;
+   --black: #271b00;
    --darkGray: #6D6D6D;
    --lightGray: #EBEBEB;
    --gray: #cfcfcf;
    --white: #F8F8F8;
-   --green: #4F8C10;
+   --yellow: #ffd23F;
 }
 .wrapper {
     min-height: 100vh;
@@ -34,7 +34,7 @@ nav {
 
 }
 .currentNav {
-    border-bottom: solid 2px var(--green);
+    border-bottom: solid 2px var(--yellow);
 }
 main {
     background-color: var(--white);
@@ -94,8 +94,12 @@ main {
 }
 nav a {
     text-decoration: none;
+    transition: ease 0.2s;
 }
+nav a:hover {
+    color: var(--yellow);
 
+}
 .openCap {
     top: 0px;
 }
@@ -577,7 +581,7 @@ nav a {
         bottom: -110vh;
         right: 0;
     }
-    50% {
+    80% {
         bottom: 0;       
         bottom: 10vh;
         rotate: -40deg;
@@ -621,12 +625,15 @@ nav a {
         height: 45vh;
     }
     .worksItemExpandedBox {
-        width: 70vw;
-        height: 80vh;
+        width: 50vw;
+        height: 90vh;
     }
     .aboutInfo div {
         font-size: 1rem;
         padding: 16px;
+    }
+    .itemExImg {
+        align-items: center;
     }
     .aboutInfo {
         flex-direction: column;
@@ -640,5 +647,8 @@ nav a {
     }
     .contactMe a p {
         font-weight: bold;
+    }
+    .main2 div h2 {
+        font-size: 2rem;
     }
 }
