@@ -4,14 +4,34 @@ console.log("linked")
 let increase = 0;
 var querySize = window.matchMedia("(min-width: 740px)")
 
+//Image lets and vars^
+
+//virkverk
+let virkTextLogo = "<img src=./img/projects/virkverk/size_small/VirkVerk_Logo_Text_GreyBG_PNG_Big.jpg class=itemImgObj alt=virkverk-logo>"
+let virkLogo = "<img src=./img/projects/virkverk/VirkVerk_Logo_GreyBG_PNG.png class=itemImgObj alt=virkverk-logo-text>"
+let virkPosterHeat = "<img src=./img/projects/virkverk/size_small/NeedHeat.jpg class=itemImgObj alt=virkverk-poster>"
+let virkPosterHere = "<img src=./img/projects/virkverk/size_small/WinterisHere2.jpg class=itemImgObj alt=virkverk-poster>"
+let virkBag = "<img src=./img/projects/virkverk/size_small/VirkVerkBag.jpg class=itemImgObj alt=virkverk-mockup>"
+
+//qente 
+let qenteCard = " <img src=../img/projects/qente/size_small/qenteCard.jpg alt=qente_logo class=itemImgObj id=qenteCardImg>"
+let qenteMockup = "<img src=../img/projects/qente/size_small/qentemockupphone2.jpg alt=website_mockup class=itemImgObj id=mockupImg>"
+let qenteScreenCap =  "<img src=../img/projects/qente/size_small/screencap.jpg alt=screen-capture class=itemImgObj>"
 
 
-
-
-
-function onLoad() {
-
+function onLoad(querySize) {
+    if(querySize.matches) {
+        console.log("images swapped")
+        virkPosterHeat = "<img src=./img/projects/virkverk/NeedHeat.jpg class=itemImgObj alt=virkverk-poster>" 
+        virkTextLogo = "<img src=./img/projects/virkverk/VirkVerk_Logo_Text_GreyBG_PNG_Big.png class=itemImgObj alt=virkverk-logo>"
+        virkPosterHere = "<img src=./img/projects/virkverk/WinterisHere2.jpg class=itemImgObj alt=virkverk-poster>"
+        virkBag =  "<img src=./img/projects/virkverk/VirkVerkBag.jpg class=itemImgObj alt=virkverk-mockup>"
+    }
 }
+
+onLoad(querySize)
+
+
 
 let keycap = document.getElementsByClassName("keycap");
 function loadLogo() {
@@ -120,7 +140,7 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
                     case 0:
                     console.log("first item")
                     title.innerHTML = "Q'ENTE"
-                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo> <img src=../img/projects/qente/qenteCard.jpg alt=qente_logo class=itemImgObj id=qenteCardImg> <img src=../img/projects/qente/qentemockupphone2.jpg alt=website_mockup class=itemImgObj id=mockupImg>"
+                    img.innerHTML = "<img class=itemImgObj src=../img/projects/qente/logotypeText.svg alt=qente_logo>" + qenteCard + qenteMockup + qenteScreenCap
                     desc.innerHTML = "Work done for Q'ente, a company who provides health and art. This project was done by me and other classmates for our final exam."
                     for (let v = 0; v < imgObj.length; v++) {
                     imgObj[0].classList.add("imgObjOn")
@@ -129,11 +149,22 @@ for (let itemCount = 0; itemCount < worksItem.length; itemCount++) {
                     }
                     break;
                     case 1:
-                        console.log("first item")
+                        console.log("2nd item")
                     title.innerHTML = "SMALL PROJECTS"
                     img.innerHTML = "<img class=itemImgObj src=../img/projects/smallerProj/onomatopoetiskaord2023.jpg alt=splash_art_piece> <img src=../img/projects/qente/logotypeText.svg alt=qente_logo class=itemImgObj>"
                     desc.innerHTML = "These are smaller projects, created within 2 or 3 weeks"
                     break;
+                    case 2: 
+                    console.log("3rd item")
+                    title.innerHTML = "Virkverk"
+                    img.innerHTML = virkTextLogo + virkLogo + virkPosterHeat + virkPosterHere + virkBag;
+                    desc.innerHTML = "Design made for a UF-company, 'Virkverk'. From posters to logotypes. "
+                    break;
+                    default: 
+                    console.log("no item to show")
+                    title.innerHTML = "placeholder"
+                    img.innerHTML = "TO BE USED"
+                    desc.innerHTML = "nothing to see here yet!"
                 }
         }
         

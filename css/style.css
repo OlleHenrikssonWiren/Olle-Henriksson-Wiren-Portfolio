@@ -359,6 +359,8 @@ nav a:hover {
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
+
     overflow: hidden;
     position: relative;
     z-index: 300;
@@ -441,7 +443,6 @@ nav a:hover {
     position: absolute;
     opacity: 0.7;
     cursor: pointer;
-    top: 15px;
 }
 
 .dot {
@@ -534,6 +535,11 @@ nav a:hover {
     padding: 32px;
     padding-bottom: 8px;
 }
+.virkverkLogo {
+    width: 100%;
+}
+
+
 
 
 .blobButton {
@@ -619,7 +625,10 @@ nav a:hover {
         width: 100%;
 
     }
+    .itemClose {
+        top: 15px;
 
+    }
     .worksItem {
         width: 20vw;
         height: 45vh;
