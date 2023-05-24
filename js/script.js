@@ -26,6 +26,10 @@ function onLoad(querySize) {
         virkTextLogo = "<img src=./img/projects/virkverk/VirkVerk_Logo_Text_GreyBG_PNG_Big.png class=itemImgObj alt=virkverk-logo>"
         virkPosterHere = "<img src=./img/projects/virkverk/WinterisHere2.jpg class=itemImgObj alt=virkverk-poster>"
         virkBag =  "<img src=./img/projects/virkverk/VirkVerkBag.jpg class=itemImgObj alt=virkverk-mockup>"
+
+        qenteScreenCap =  "<img src=../img/projects/qente/screencap.jpg alt=screen-capture class=itemImgObj>"
+        qenteCard = " <img src=../img/projects/qente/qenteCard.jpg alt=qente_logo class=itemImgObj id=qenteCardImg>"
+        qenteMockup = "<img src=../img/projects/qente/qentemockupphone2.jpg alt=website_mockup class=itemImgObj id=mockupImg>"
     }
 }
 
