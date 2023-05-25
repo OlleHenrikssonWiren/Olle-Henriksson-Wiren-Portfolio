@@ -6,13 +6,13 @@
 
 ### Vad ska vara med i planering: (~~strikethrough~~ om klar)
 - ~~Pappersskiss~~
-- Font(s) & Färgtema
+- ~~Font(s) & Färgtema~~
 - Bildmanér(?)
-- grafisk profil
-- Figma Skiss
-- Logotyp(?)
+- ~~grafisk profil~~
+- ~~Figma Skiss~~
+- ~~Logotyp(?)~~
 
-- Bilder & filer till portfolio
+- ~~Bilder & filer till portfolio~~
 
 #### Planering & Process:
 Jag började planera upp mitt projekt med att leta inspiration och andra portfolio hemsidor. Efter pappersskisserna började jag leta efter typsnitt och färgtema.
@@ -22,7 +22,7 @@ Jag började planera upp mitt projekt med att leta inspiration och andra portfol
 - Gray: #CFCFCF  
 - Dark Gray: #6D6D6D
 - Black: #271b00
-- Yellow: #271b00
+- Yellow: #ffd23F
 
 #### Figma Skiss:
 https://www.figma.com/file/li7U3KYNZTJVvxciYjAave/Portfolio?node-id=0%3A1&t=1FApXgwnNKgyEosj-1
