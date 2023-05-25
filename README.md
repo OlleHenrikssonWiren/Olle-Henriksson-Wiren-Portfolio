@@ -43,3 +43,6 @@ Dessutom har jag validerat css genom https://jigsaw.w3.org/css-validator/validat
 #### Mobil, Iphone
 - Safari, funkar
 - chrome, funkar
+
+### Analys
+Det som tog mest tid och jobbigast var att lösa hur jag skulle visa mina projekt på ett effektivt vis, det var därför som jag i slutändad gjorde swtich cases för att avgöra vilket projekt man väljer och däritfrån justera innehållet. Det gjorde det lättare för mig eftersom jag inte behövde göra en div för varje projekt och att jag istället kunde ha en div och bara byta ut innehållet på div:en. Att göra på mitt nuvarande sätt gentemot att till exempel göra unika divar för varje projekt gör det effektivt för mig att lägga till nya projekt eftersom jag behöver endast lägga till mer cases till switchen.
