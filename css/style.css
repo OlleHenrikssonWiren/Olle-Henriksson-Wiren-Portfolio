@@ -30,7 +30,7 @@ nav {
     overflow-y: hidden;
     z-index: 13;
     transition: 1s ease;
-    background-color: var(--lightGray,0);
+    background-color: var(--lightGray);
 
 }
 .currentNav {
@@ -205,7 +205,7 @@ nav a:hover {
 }
 .scrollStart { /* Nav innan scroll */
     height: 10vh;
-    background-color: var(--white, 1);
+    background-color: var(--white);
 }
 .expandArrow { /* Själva pilen bredvid logo på mobil */
     width: 24px;
@@ -590,7 +590,7 @@ nav a:hover {
     80% {
         bottom: 0;       
         bottom: 10vh;
-        rotate: -40deg;
+        transform: rotate(40deg);
 
     }
     100% {

@@ -26,3 +26,20 @@ Yellow: #271b00
 
 #### Figma Skiss:
 https://www.figma.com/file/li7U3KYNZTJVvxciYjAave/Portfolio?node-id=0%3A1&t=1FApXgwnNKgyEosj-1
+
+
+### Validering & Tester
+
+
+##### HTML Validering
+Jag har validerat koden genom https://validator.w3.org/ och det finns inga errors eller varningar.
+Dessutom har jag validerat css genom https://jigsaw.w3.org/css-validator/validato och det finns inga error efter korregeringar.
+
+##### Dator:
+- firefox, funkar
+- chrome, funkar
+- Edge, funkar
+
+#### Mobil, Iphone
+- Safari, funkar
+- chrome, funkar
